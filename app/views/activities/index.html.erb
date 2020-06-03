@@ -1,0 +1,23 @@
+<div class="container-fluid p-5 justify-content-center">
+    <p id="notice"><%= notice %></p>
+    <h1>My Activities</h1>
+    <div class="container-fluid">
+      <div class="mb-3">
+        <%= link_to 'New Activity', new_activity_path, class: "btn btn-primary btn-md" %>
+      </div>
+    <div class="row">
+      <% @activities.each do |activity| %>
+        <div class="col-sm-6">
+          <div class="card generic-card mb-3">
+            <div class="card-header">
+              <h5><%= activity.name %></h5>
+            </div>
+            <div class="card-body">
+              <p><%= activity.date %></p>
+              <%= link_to 'View', activity, class: "" %>
+          </div>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>
