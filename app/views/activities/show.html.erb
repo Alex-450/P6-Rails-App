@@ -9,4 +9,4 @@
 
 <%= link_to 'Edit', edit_activity_path(@activity) %> |
 <%= link_to 'Back', activities_path %> |
-<%= link_to 'Delete activity', @activity.destroy, data: { confirm: 'Are you sure?' } %>
+<%= link_to 'Delete activity', @activity, method: :delete, data: { confirm: 'Are you sure?' } %>
