@@ -16,6 +16,7 @@ class ActivitiesController < ApplicationController
   # GET /activities/1
   # GET /activities/1.json
   def show
+    @activitytype = ActivityType.find_by(id: @activity[:activity_type_id])
   end
 
   # GET /activities/new
