@@ -16,7 +16,6 @@
       </div>
   </div>
 </div>
-</div>
   
   <% else %>
     <div class="row mb-3 justify-content-center">
@@ -30,7 +29,7 @@
               <h5><%= activity.name %></h5>
             </div>
             <div class="card-body">
-              <p><%= activity.date %></p>
+              <p><%= displayDate(activity.date) %></p>
               <%= link_to 'View', activity, class: "btn btn-primary btn-md" %>
             </div>
           </div>

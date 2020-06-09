@@ -18,7 +18,7 @@
         <div class="form-group">
             <%= f.label :password, class: "font-weight-bold" %>
             <% if @minimum_password_length %>
-            <em>(<%= @minimum_password_length %> characters minimum)</em>
+            <p class="profile-subtitle">(<%= @minimum_password_length %> characters minimum)</p>
             <% end %><br />
             <%= f.password_field :password, autocomplete: "new-password", placeholder: "Enter password", class: "form-control" %>
         </div>

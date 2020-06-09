@@ -14,15 +14,11 @@ module ActivitiesHelper
         return @activities.count
     end
 ## helper function for displaying date
-    def displayDate
-        return @activity.date.to_time.strftime('%b %d, %Y')
+    def displayDate(activityDate)
+        return activityDate.to_time.strftime('%b %d, %Y')
     end
-## helper function for displaying start time
-    def displayStartedTime
-        return @activity.started_at.to_time.strftime('%l:%M %p')
-    end
-## helper function for displaying end time
-    def displayEndTime
-        return @activity.ended_at.to_time.strftime('%l:%M %p')
+## helper function for displaying time
+    def displayTime(activityTime)
+        return activityTime.to_time.strftime('%l:%M %p')
     end
 end
