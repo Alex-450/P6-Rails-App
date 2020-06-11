@@ -1,13 +1,13 @@
-<div class="container m-5 p-5 border border-secondary">
-
+<div class="edit-profile-cover p-4">
+  <div class="form-container container p-4">
     <h2>Edit profile</h2>
 
     <%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
-      <%= render "devise/shared/error_messages", resource: resource %>
+    <%= render "devise/shared/error_messages", resource: resource %>
 
       <div class="form-group">
         <%= f.label :name, class: "font-weight-bold" %><br />
-        <%= f.email_field :name, autofocus: true, class: "form-control" %>
+        <%= f.text_field :name, autofocus: true, class: "form-control" %>
       </div>
 
       <div class="form-group">
@@ -40,15 +40,19 @@
         <%= f.password_field :current_password, autocomplete: "current-password", placeholder: "Current password", class: "form-control" %>
       </div>
 
-      <div class="actions">
-        <%= f.submit "Update", class: "btn btn-primary btn-md" %>
+      <div class="row justify-content-center">
+        <%= f.submit "Update", class: "generic-button" %>
       </div>
-    <% end %>
+      <% end %>
 
-  <div class="mt-3">
-
-    <p>Unhappy? <%= button_to "Delete my account", registration_path(resource_name), data: { confirm: "Are you sure?" }, method: :delete, class: "btn btn-danger btn-md" %></p>
-
+      <div class="row justify-content-center mt-3">
+        <p>Unhappy?</p>
+      </div>
+      <div class="row justify-content-center">
+        <%= button_to "Delete my account", registration_path(resource_name), data: { confirm: "Are you sure?" }, method: :delete, class: "btn btn-danger btn-md" %>
+      </div>
+      <div class="row justify-content-center mt-3">
+        <%= link_to "Back", :back, class: "btn btn-secondary btn-md" %>
+      </div>
   </div>
-    <%= link_to "Back", :back, class: "btn btn-secondary btn-md" %>
 </div>

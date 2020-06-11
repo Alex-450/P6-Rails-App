@@ -34,6 +34,12 @@ body {
   background-color: rgba(0, 0, 0, 0.75);
 }
 
+.generic-title {
+  background-color: rgba(0, 0, 0, 0.75);
+  color: white;
+  border: 3px solid white;
+}
+
 .generic-button {
   background-color: rgba(0, 0, 0, 0.75);
   padding: 0.5em;
@@ -77,6 +83,20 @@ body {
 
 .sign-up-cover {
   background: url(asset_path("sign-up-cover")) no-repeat center center fixed;
+  background-size: cover;
+  min-width: 100%;
+}
+
+.activity-cover {
+  background: url(asset_path("new-activity-cover")) no-repeat center center
+    fixed;
+  background-size: cover;
+  min-width: 100%;
+}
+
+.edit-profile-cover {
+  background: url(asset_path("edit-profile-cover")) no-repeat center center
+    fixed;
   background-size: cover;
   min-width: 100%;
 }
