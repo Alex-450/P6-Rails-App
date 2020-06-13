@@ -1,8 +1,8 @@
 @import "bootstrap/scss/bootstrap";
-@import url("https://fonts.googleapis.com/css2?family=Padauk&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap");
 
 body {
-  font-family: "Padauk", sans-serif;
+  font-family: "Roboto Slab", serif;
   min-height: 100%;
 }
 
@@ -25,7 +25,6 @@ body {
   border: 3px solid white;
   background-color: rgba(0, 0, 0, 0.75);
   color: white;
-  padding: 1em;
 }
 
 .jumbotron-text {
@@ -56,12 +55,35 @@ body {
   border-radius: 0.25rem;
 }
 
+.generic-button-secondary {
+  background-color: rgba(180, 180, 180, 0.25);
+  padding: 0.25em;
+  color: white;
+  border: 3px solid white;
+  border-radius: 0.25rem;
+}
+
+.generic-button-secondary:hover {
+  background-color: rgba(180, 180, 180, 0.45);
+  color: white;
+  text-decoration: underline;
+  border-color: #007bff;
+  border-radius: 0.25rem;
+}
+
 .generic-container {
   background-color: #bababa;
 }
 
 .generic-card {
-  background-color: #eeeeee;
+  background-color: rgba(0, 0, 0, 0.25);
+  color: white;
+  border: 3px white solid;
+}
+
+.card-header {
+  border-bottom: 2px white solid;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .alert {

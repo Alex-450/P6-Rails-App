@@ -20,17 +20,18 @@
           </div>
         <% end %>
 
-        <div class="actions">
+        <div class="row justify-content-center">
           <%= f.submit "Log in", class: "btn btn-primary btn-md generic-button mb-4" %>
         </div>
       <% end %>
 
-      <div class="mt-2 mb-2">
+      <div class="row justify-content-center mt-2 mb-2">
         <h4>Other options:</h4>
       </div>
       
-      <div class="mt-2">
-        <%= render "devise/shared/links" %>
+      <div class="row justify-content-center mt-2">
+          <%= link_to "Sign up", "/users/sign_up", class: "generic-button-secondary mx-2" %>
+          <%= link_to "Forgot your password?", "/users/password/new", class: "generic-button-secondary" %>
       </div>
     </div>
 </div>

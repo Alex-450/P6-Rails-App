@@ -10,6 +10,4 @@ class Activity < ApplicationRecord
     validates :ended_at, presence: true
     validates :activity_type_id, presence: true
     validates :user_id, presence: true
-    # scope for displaying activities per user
-    # scope :activities_by_user, (current_user.id, user_id) -> { where(user_id: current_user.id) }
 end

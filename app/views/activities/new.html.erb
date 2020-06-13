@@ -11,9 +11,11 @@
         </ul>
     </div>
 <% end %>
-<div class="container-fluid activity-cover p-5">
-    <div class="container text-center generic-title justify-content-center">
-        <h1>New Activity</h1>
+<div class="container-fluid activity-cover p-4">
+    <div class="container text-center generic-title">
+        <div class="row justify-content-center p-2">
+            <h1>New Activity</h1>
+        </div>
     </div>
 
     <div>
@@ -21,6 +23,6 @@
     </div>
 
     <div class="row my-3 justify-content-center">
-        <%= link_to 'Back', activities_path, class: "generic-button" %>
+        <%= link_to '← Back to activities', activities_path, class: "generic-button-secondary" %>
     </div>
 </div>

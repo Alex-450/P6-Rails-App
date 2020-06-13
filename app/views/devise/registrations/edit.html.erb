@@ -20,11 +20,10 @@
       <% end %>
 
       <div class="form-group">
-        <%= f.label :password, class: "font-weight-bold" %><br />
-        <p class="profile-subtitle">leave blank if you don&#39;t want to change it</p>
+        <%= f.label :password, class: "font-weight-bold" %>
+        <p class="profile-subtitle">- leave blank if you don&#39;t want to change it</p>
         <%= f.password_field :password, autocomplete: "new-password", placeholder: "New password", class: "form-control" %>
         <% if @minimum_password_length %>
-          <br />
           <p class="profile-subtitle"><%= @minimum_password_length %> characters minimum</p>
         <% end %>
       </div>
@@ -35,8 +34,8 @@
       </div>
 
       <div class="form-group">
-        <%= f.label :current_password, class: "font-weight-bold" %><br />
-        <p class="profile-subtitle">we need your current password to confirm your changes</p>
+        <%= f.label :current_password, class: "font-weight-bold" %>
+        <p class="profile-subtitle">- we need your current password to confirm your changes</p>
         <%= f.password_field :current_password, autocomplete: "current-password", placeholder: "Current password", class: "form-control" %>
       </div>
 
@@ -49,10 +48,10 @@
         <p>Unhappy?</p>
       </div>
       <div class="row justify-content-center">
-        <%= button_to "Delete my account", registration_path(resource_name), data: { confirm: "Are you sure?" }, method: :delete, class: "btn btn-danger btn-md" %>
+        <%= button_to "Delete my account", registration_path(resource_name), data: { confirm: "Are you sure?" }, method: :delete, class: "generic-button-secondary" %>
       </div>
       <div class="row justify-content-center mt-3">
-        <%= link_to "Back", :back, class: "btn btn-secondary btn-md" %>
+        <%= link_to "← Back", :back, class: "generic-button-secondary" %>
       </div>
   </div>
 </div>
