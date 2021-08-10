@@ -1,6 +1,6 @@
 # README
 
-Ruby version: 2.6.3
+Ruby version: 2.7.3
 
 Rails version: 6.0.3
 
